@@ -1,0 +1,202 @@
+<html>
+<head>
+
+	<title>Darshit Savaliya</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" href="img/favicon.png">
+	<script src="js/popper.min.js"></script> 
+ 	<script src="js/jquery.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!----- Main ------->
+
+<div class="content" id="Main">
+  <div class="card-content"><img src="img/user.png" alt="Logo"></div>
+  <div class="card-content2 py-3">
+    <h2>Darshit Savaliya</h2>
+    <p>Graphic & Web Designer</p>
+  </div>
+  
+  <div class="contact-buttons">
+    <div class="contact-bg">
+      <a class="contact-button" href="tel:+91 97374 36065">
+        <i class="fa fa-phone"></i>
+        Call
+      </a>
+      <a class="contact-button" href="https://wa.me/+9197374360658" target="blank">
+        <i class="fa fa-whatsapp"></i>
+        Whatsapp
+      </a>
+      <a class="contact-button" href="mailto:darshit97374@gmail.com">
+        <i class="fa fa-envelope"></i>
+        Mail
+      </a>
+    </div>
+  </div>
+
+  <div class="main1">
+    <!-- <div class="row">
+      <div class="col-sm-3"> 
+        <a class="loc" href="#"  target="blank">
+          <i class="fa fa-map-marker"></i>
+       </a>
+      </div>
+      <div class="col-sm-9">
+        <a href="#"  target="blank"><p class="add">Prathna Row House 5, Second Floor, opp. Sneh Sankul Wadi, Anand Mahal Road,Adajan, Surat </p></a>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-sm-3"> 
+        <a class="mail" href="mailto:darshit97374@gmail.com">
+          <i class="fa fa-envelope"></i>
+       </a>
+     </div>
+      <div class="col-sm-9">
+        <a href="mailto:darshit97374@gmail.com" style="text-decoration: none;color:white;"><p class="mailtxt">darshit97374@gmail.com</p></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"> 
+        <a class="mobile" href="tel:+91 97374 36065">
+          <i class="fa fa-phone"></i>
+       </a>
+     </div>
+      <div class="col-sm-9">
+        <a href="tel:+91 97374 36065" style="text-decoration: none;color:white;"><p class="mobiletxt">+91 97374 36065</p></a>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="shadow-buttons">
+        <a class="shadow-button" download="img/Darshit.vcf" style="text-decoration: none;font-size: 14px;text-align: center;" href="img/Darshit.vcf" target="blank"><i class="fa fa-download" style="font-size:14px;"></i>&nbsp;&nbsp;Save Contact
+        </a>
+        <a class="share shadow-button"  href="#webshare"  style="text-decoration: none;text-align: center;">
+          <i class="fa fa-share-alt" style="font-size:14px;"></i>&nbsp;&nbsp;Share
+        </a>
+      </div> 
+    </div>
+  <div class="container mt-5 text-center">
+  <p class="text-dark">Desing By <a href="#" target="blank" class="text-dark text-bold">Mr.SDM</a></p>
+  </div>
+</div>
+
+
+
+  
+<script>
+  $(document).ready(function(){
+    $('#share.close,#share-pop').on('click',function(){
+      $('.share').slideToggle();
+    });
+  })
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+  // get page information
+  const 
+    html = document.documentElement,
+    canonical = document.querySelector('link[rel=canonical]'),
+    desc = document.getElementsByName('description'),
+    pageInfo = {
+      url: canonical ? canonical.href : location.href,
+      title: document.title || '',
+      text: desc.length ? desc[0].content : ''
+    };
+   // Web share API support?
+  if (navigator.share) html.classList.add('webshareapi');
+  
+  // social sharing enabled
+  html.classList.add('social');
+
+  // click event
+  document.body.addEventListener('click', (e) => {
+    
+    // on share button?
+    let t = e.target.closest('A');
+    if (!t || !t.closest('.share')) return;
+    
+    // cancel link
+    e.preventDefault();
+    
+    // Web share API
+    if (t.hash === '#webshare') {
+      
+      navigator.share(pageInfo);
+      return;
+  
+    }
+    
+    // social media link
+    let popup, newUrl = urlParse(t.href, pageInfo);
+    
+    // open popup
+    if (t.protocol.startsWith('http')) {
+      
+      let
+        sw = screen.availWidth || 1024,
+        sh = screen.availHeight || 700,
+        pw = Math.min(600, (sw - 40)),
+        ph = Math.min(600, (sh - 40)),
+        px = Math.floor((sw - pw) / 2),
+        py = Math.floor((sh - ph) / 2);
+
+      popup = window.open(
+        newUrl,
+        'social',
+        `width=${pw},height=${ph},left=${px},top=${py},\
+        location=0,menubar=0,toolbar=0,personalbar=0,status=0,scrollbars=1,resizable=1`
+      );
+    }
+    
+    if (popup) popup.focus();
+    else location.href = newUrl;
+    
+  });
+  
+  
+  // URL template parser
+  function urlParse(str, token) {
+    
+    for (let t in token) {
+      str = str.replace(new RegExp('\\$\\{' + t + '\\}', 'g'), encodeURIComponent(token[t]));
+    }
+    return str;
+    
+  }
+  
+});
+</script>
+</body>
+</html>
+
+<!-- <div class="container-fulid">
+      <div class="">
+      <div class="row" style="width: 100%;">
+        <div class="offset-md-3 col-md-6">
+          <img src="img/Reno.jpg" style="margin-top: 10px;">
+          
+              <img src="img/Logo5_final.png" alt="" style="width: 50%;">
+           </div>
+        </div>
+      </div>
+      </div> -->
