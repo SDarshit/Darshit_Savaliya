@@ -30,10 +30,6 @@ body {
   .share, .webshare {
     display: none;
   }
-
-  .social .share {
-    display: flex;
-  }
 .bg {
   /* The image used */
   background-image: url("../img/background.jpg");
@@ -76,29 +72,12 @@ body {
   font-size: 17px;
 }
 
-
-/*.navbar a:hover {
-  background-color: #ddd;
-  color:#6ab240;
-}*/
-
-/*.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-*/
 .navbar .icon {
   display: none;
 }
 a.share.shadow-button i{
-  margin-left: 35px;
   margin-top: 1px;
 
-}
-@media (max-width: 360px){
-  a.share.shadow-button i{
-  margin-left: 28px;
-}
 }
 @media screen and (max-width: 1024px) {
   .navbar a{
@@ -760,7 +739,7 @@ a.share.shadow-button i{
 @media(min-width: 280px) and (max-width: 653px) {
   .contact-button {
     padding: 8px 8px;
-    font-size: 9px;
+    font-size: 12px;
   }
   .loc {
     padding: 8px 13px;
@@ -780,20 +759,20 @@ a.share.shadow-button i{
     color:#000;
   }
   .mail{
-     padding: 8px 10px;
-      display: inline-block;
-     /* font-size: 14px;*/
-      text-align: center;
-      margin-right: 5px;
-      margin-bottom: 20px;
-      margin-top: 35px;
-      margin-left: -12px;
+    padding: 8px 8px;
+    display: inline-block;
+    /* font-size: 14px; */
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-left: -12px;
   }
   .mailtxt{
-     font-size: 12px;
-     margin-top: -45px;
-     margin-left: 40px;
-     color:#000;
+    font-size: 16px;
+    margin-top: -45px;
+    margin-left: 32px;
+    color: #000;
   }
   .web{
     padding: 8px 11px;
@@ -812,7 +791,7 @@ a.share.shadow-button i{
     color:#000;
   }
   .mobile{
-    padding: 8px 12px;
+    padding: 8px 9px;
     display: inline-block;
     /* font-size: 16px;*/
     text-align: center;
@@ -822,9 +801,9 @@ a.share.shadow-button i{
     margin-left: -12px;
   }
   .mobiletxt{
-    font-size: 12px;
-    margin-top: -45px;
-    margin-left: 40px;
+    font-size: 18px;
+    margin-top: -50px;
+    margin-left: 32px;
     color:#000;
   }
   .card {
@@ -1097,61 +1076,8 @@ a.share.shadow-button i{
     color:#000;
   }
 }
-@media(min-width: 280px) and (max-width: 280px) {
-.whatsapp-input input{
-  margin-top: 147px !important;
-  margin-left: -1px;
-  width: 100%;
-  }
-.whatsapp-button{
-  margin-top: 10px !important;
-  margin-left: -1px;
-  width: 100%;
-  }
-  .contact-button {
-    padding: 9px 13px;
-    font-size: 13px;
-  }
-  .mail{
-     padding: 8px 8px;
-      display: inline-block;
-     /* font-size: 14px;*/
-      text-align: center;
-      margin-right: 5px;
-      margin-bottom: 20px;
-      margin-top: 15px;
-      margin-left: 0px;
-  }
-  .mailtxt{
-     font-size: 17px;
-    margin-top: -50px;
-    margin-left: 45px;
-     color:#000;
-  }
-  .mobile{
-    padding: 8px 10px;
-    display: inline-block;
-    /* font-size: 16px;*/
-    text-align: center;
-    margin-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: 0px;
-  }
-  .mobiletxt{
-    font-size: 17px;
-    margin-top: -50px;
-    margin-left: 45px;
-    color:#000;
-  }
-}
-.shadow-buttons {
-    display: flex;
-    justify-content: center;
-    margin: -5px;
-    margin-top: 15px;
-}
 .shadow-button {
+  width: 90%;
     border-radius: 20px;
     padding: 10px 10px;
     font-size: 13px;
@@ -1165,8 +1091,7 @@ a.share.shadow-button i{
     font-weight: 600;
 }
 .shadow-buttons :hover {
-  /*transition: 1s ease-in-out;
-  background: #4F95DA;*/
+  width: 90%;
   font-weight: 600;
   color:#fff;
   background:linear-gradient(to right, #2d596f 0%, #1f526a 100%);
