@@ -32,9 +32,7 @@ body {
   }
 
   .social .share {
-    display: flex;  /*flex-wrap: wrap;*/
-    user-select: none;
-
+    display: flex;
   }
 .bg {
   /* The image used */
@@ -1094,6 +1092,54 @@ a.share.shadow-button i{
   }
   .mobiletxt{
     font-size: 18px;
+    margin-top: -50px;
+    margin-left: 45px;
+    color:#000;
+  }
+}
+@media(min-width: 280px) and (max-width: 280px) {
+.whatsapp-input input{
+  margin-top: 147px !important;
+  margin-left: -1px;
+  width: 100%;
+  }
+.whatsapp-button{
+  margin-top: 10px !important;
+  margin-left: -1px;
+  width: 100%;
+  }
+  .contact-button {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+  .mail{
+     padding: 8px 8px;
+      display: inline-block;
+     /* font-size: 14px;*/
+      text-align: center;
+      margin-right: 5px;
+      margin-bottom: 20px;
+      margin-top: 15px;
+      margin-left: 0px;
+  }
+  .mailtxt{
+     font-size: 17px;
+    margin-top: -50px;
+    margin-left: 45px;
+     color:#000;
+  }
+  .mobile{
+    padding: 8px 10px;
+    display: inline-block;
+    /* font-size: 16px;*/
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .mobiletxt{
+    font-size: 17px;
     margin-top: -50px;
     margin-left: 45px;
     color:#000;
